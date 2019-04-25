@@ -21,7 +21,7 @@ Poke Snap is a Social Media app that aims to incorporate face to face interactio
 Poke Snap currently has 4 services built to support the application.
 
 | Name of Service | Platform Service is Running On | Architecture |
-| --------------- | ------------------------------ |
+| --------------- | ------------------------------ | ------------ |
 | [Poke Snap Mobile Platform](https://github.com/poke-snap/poke-snap) | [Expo](https://expo.io/) | Cross-Platform Native App |
 | [Face Recognition Service](https://github.com/poke-snap/face-recognition-service) | [AWS EC2](https://aws.amazon.com/ec2/) | Microservice (Docker Container) |
 | [Poke Service](https://github.com/poke-snap/poke-service) | [AWS Lambda](https://aws.amazon.com/lambda/) | Serverless (FaaS) |
