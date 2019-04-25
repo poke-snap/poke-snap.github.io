@@ -43,5 +43,26 @@ The arrows between services and platforms indicate that there are API calls made
 
 ![Poke Snap System Overview](/assets/poke_snap_design.png)
 
-### 
+## Application Usage
 
+### User Steps
+
+
+### Technical User Steps
+
+| Step # | Step Explanation | Service Starting Step | Service / Platform Receiving Step |
+| :----: | ---------------- | --------------------- | ------------------ |
+(1) | Snap a picture of another person's face | Poke Snap Mobile Platform | N/A |
+(2) | Send the picture for facial recognition | Poke Snap Mobile Platform | Face Recognition Service |
+(3) | Picture has face extracted, facial recognition model determines the username | Face Recognition Service | N/A |
+(4) | Username is sent to the client | Face Recognition Service | Poke Snap Mobile Platform |
+(5) | Request for a poke to be sent to the user's device | Poke Snap Mobile Platform | Poke Service |
+(6) | Determine if the two user (sender and user to poke) are *reasonably near* one another | Poke Service | AWS DynamoDB |
+(7) | Send a poke to the user's device | Poke Service | Poke Snap Mobile Platform |
+
+In the background usage, the Poke Snap Mobile Platform is making REST API calls to the Update Service to update the location data on AWS DynamoDB.
+
+
+## License
+
+[MIT](https://github.com/poke-snap/poke-snap.github.io/blob/master/LICENSE)
