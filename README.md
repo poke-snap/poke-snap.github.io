@@ -32,8 +32,8 @@ Poke Snap also uses 2 external platforms to support the application.
 
 | Name of Platform | Platform Type |
 | ---------------- | ------------- |
-| [AWS DynamoDB]() | Key-Value Database |
-| [AWS S3]() | Filesystem (Image Store) |
+| [AWS DynamoDB](https://aws.amazon.com/dynamodb/) | Key-Value Database |
+| [AWS S3](https://aws.amazon.com/s3/) | Filesystem (Image Store) |
 
 
 ### System Overview
